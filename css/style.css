@@ -90,7 +90,11 @@ body {
 	.header__navigation {
 		display: flex;
 		flex-wrap: nowrap;
-		overflow: scroll;
+		overflow-x: scroll;
+		}
+
+		.header__navigation::-webkit-scrollbar {
+			display: none;
 		}
 	
 	.item {
@@ -240,6 +244,10 @@ body {
 		display: flex;
 		flex-wrap: nowrap;
 		overflow: auto;
+		}
+
+		.header__navigation::-webkit-scrollbar {
+			display: none;
 		}
 
 		.item {
